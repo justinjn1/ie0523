@@ -1,0 +1,90 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Mon Nov 11 08:39:29 2024
+[*]
+[dumpfile] "/home/justinjn2/Desktop/IE-0523/Verilog/Tarea05/ondas.vcd"
+[dumpfile_mtime] "Mon Nov 11 08:37:41 2024"
+[dumpfile_size] 8243
+[savefile] "/home/justinjn2/Desktop/IE-0523/Verilog/Tarea05/ondas.gtkw"
+[timestart] 0
+[size] 1366 699
+[pos] 100542 20066
+*-4.646346 0 65 129 129 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[markername] AA
+[markername] BB
+[markername] CC
+[markername] DD
+[markername] EE
+[markername] FF
+[markername] GG
+[markername] HH
+[markername] II
+[markername] JJ
+[markername] KK
+[markername] LL
+[markername] MM
+[markername] NN
+[markername] OO
+[markername] PP
+[markername] QQ
+[markername] RR
+[markername] SS
+[markername] TT
+[markername] UU
+[markername] VV
+[markername] WW
+[markername] XX
+[markername] YY
+[markername] ZZ
+[treeopen] testbench.
+[sst_width] 40
+[signals_width] 150
+[sst_expanded] 0
+[sst_vpaned_height] 100
+@200
+-General
+@28
+testbench.UUT1.clk
+testbench.UUT1.CKP
+testbench.UUT1.CPH
+testbench.UUT1.CS
+@200
+-main
+@28
+testbench.UUT1.rst
+testbench.UUT1.start
+testbench.UUT1.state[1:0]
+[color] 7
+testbench.UUT1.SCK
+testbench.UUT1.MOSI
+testbench.UUT1.MISO
+@22
+[color] 2
+testbench.UUT1.data_MISO[7:0]
+testbench.UUT1.data_main[7:0]
+@200
+-subnode1
+@28
+testbench.UUT2.state[1:0]
+[color] 7
+testbench.UUT2.SCK
+testbench.UUT2.MOSI
+testbench.UUT2.MISO
+@22
+[color] 2
+testbench.UUT2.data_MOSI[7:0]
+testbench.UUT2.data_node1[7:0]
+@200
+-subnode2
+@28
+testbench.UUT2.state[1:0]
+[color] 7
+testbench.UUT3.SCK
+testbench.UUT3.MOSI
+testbench.UUT3.MISO
+@22
+[color] 2
+testbench.UUT3.data_MOSI[7:0]
+testbench.UUT3.data_node2[7:0]
+[pattern_trace] 1
+[pattern_trace] 0
