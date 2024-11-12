@@ -45,48 +45,48 @@ initial begin
         start = 0;
         data_main_CPU = 0;
     #126
-    //     // MODO 1 ************************************************************
-    //     CKP = 0;
-    //     CPH = 1;
-    // #2
-    //     rst = 1;
-    // #4
-    //     start = 1;
-    //     data_main_CPU  = 8'b01000000;  // B94037, se envía el 4 y 0
-    //     data_node1_CPU = 8'b00110111;
-    //     data_node2_CPU = 8'b10101010;
-    // #2
-    //     start = 0;
-    //     data_main_CPU = 0;
-    // #126
-    //     // MODO 2 ************************************************************
-    //     CKP = 1;
-    //     CPH = 0;
-    // #2
-    //     rst = 1;
-    // #4
-    //     start = 1;
-    //     data_main_CPU  = 8'b01000000;  // B94037, se envía el 4 y 0
-    //     data_node1_CPU = 8'b00110111;
-    //     data_node2_CPU = 8'b10101010;
-    // #2
-    //     start = 0;
-    //     data_main_CPU = 0;
-    // #126
-    //     // MODO 3 ************************************************************
-    //     CKP = 1;
-    //     CPH = 0;
-    // #2
-    //     rst = 1;
-    // #4
-    //     start = 1;
-    //     data_main_CPU  = 8'b01000000;  // B94037, se envía el 4 y 0
-    //     data_node1_CPU = 8'b00110111;
-    //     data_node2_CPU = 8'b10101010;
-    // #2
-    //     start = 0;
-    //     data_main_CPU = 0;
-    // #126
+        // MODO 1 ************************************************************
+        CKP = 0;
+        CPH = 1;
+    #2
+        rst = 1;
+    #4
+        start = 1;
+        data_main_CPU  = 8'b01000000;  // B94037, se envía el 4 y 0
+        data_node1_CPU = 8'b00110111;
+        data_node2_CPU = 8'b10101010;
+    #2
+        start = 0;
+        data_main_CPU = 0;
+    #130
+        // MODO 2 ************************************************************
+        CKP = 1;
+        CPH = 0;
+    #2
+        rst = 1;
+    #4
+        start = 1;
+        data_main_CPU  = 8'b01000000;  // B94037, se envía el 4 y 0
+        data_node1_CPU = 8'b00110111;
+        data_node2_CPU = 8'b10101010;
+    #2
+        start = 0;
+        data_main_CPU = 0;
+    #130
+        // MODO 3 ************************************************************
+        CKP = 1;
+        CPH = 1;
+    #2
+        rst = 1;
+    #4
+        start = 1;
+        data_main_CPU  = 8'b01000000;  // B94037, se envía el 4 y 0
+        data_node1_CPU = 8'b00110111;
+        data_node2_CPU = 8'b10101010;
+    #2
+        start = 0;
+        data_main_CPU = 0;
+    #130
     #8 $finish;
 end
 endmodule

@@ -1,41 +1,20 @@
 [*]
 [*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
-[*] Tue Nov 12 04:38:20 2024
+[*] Tue Nov 12 04:16:20 2024
 [*]
 [dumpfile] "/home/justinjn2/repositories/ie0523/Tarea05/ondas.vcd"
-[dumpfile_mtime] "Tue Nov 12 04:18:52 2024"
+[dumpfile_mtime] "Tue Nov 12 04:12:47 2024"
 [dumpfile_size] 22830
-[savefile] "/home/justinjn2/repositories/ie0523/Tarea05/ondas.gtkw"
+[savefile] "/home/justinjn2/repositories/ie0523/Tarea05/Ondas.gtkw"
 [timestart] 0
 [size] 1366 699
-[pos] 142782 27634
+[pos] 140862 27290
 *-6.593141 0 4 136 274 412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 [markername] AA
 [markername] BB
 [markername] CC
 [markername] DD
 [markername] EE
-[markername] FF
-[markername] GG
-[markername] HH
-[markername] II
-[markername] JJ
-[markername] KK
-[markername] LL
-[markername] MM
-[markername] NN
-[markername] OO
-[markername] PP
-[markername] QQ
-[markername] RR
-[markername] SS
-[markername] TT
-[markername] UU
-[markername] VV
-[markername] WW
-[markername] XX
-[markername] YY
-[markername] ZZ
 [treeopen] testbench.
 [sst_width] 40
 [signals_width] 150
