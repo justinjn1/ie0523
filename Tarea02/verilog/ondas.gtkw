@@ -1,0 +1,40 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Tue Sep 17 13:22:52 2024
+[*]
+[dumpfile] "/home/justinjn2/Desktop/IE-0523/Tareas/Tarea02/verilog/ondas.vcd"
+[dumpfile_mtime] "Tue Sep 17 13:22:32 2024"
+[dumpfile_size] 27924
+[savefile] "/home/justinjn2/Desktop/IE-0523/Tareas/Tarea02/verilog/ondas.gtkw"
+[timestart] 0
+[size] 1366 689
+[pos] 25 22
+*-3.502500 12 0 13 27 43 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[markername] APrueba01
+[markername] BPrueba02
+[markername] CPrueba03
+[markername] DPrueba04
+[treeopen] testbench.
+[sst_width] 278
+[signals_width] 180
+[sst_expanded] 1
+[sst_vpaned_height] 164
+@28
+testbench.UUT1.clk
+testbench.UUT1.rst
+testbench.UUT1.s01
+testbench.UUT1.s02
+@22
+testbench.UUT1.state[3:0]
+@28
+testbench.UUT1.cnt[1:0]
+@22
+testbench.UUT1.pass[15:0]
+@23
+testbench.UUT1.rghtpss[15:0]
+@28
+testbench.UUT1.gate
+testbench.UUT1.lock_alarm
+testbench.UUT1.wrong_pin_alarm
+[pattern_trace] 1
+[pattern_trace] 0

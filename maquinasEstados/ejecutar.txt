@@ -1,0 +1,9 @@
+# Comandos en una sola línea:
+iverilog testbench_me.v -o salida.exe && ./salida.exe && gtkwave ondas.gtkw && rm salida.exe && rm resultados.vcd
+
+# Comandos línea por línea:
+    iverilog testbench_me.v -o salida.exe
+    ./salida.exe
+    gtkwave ondas.gtkw
+    rm salida.exe
+    rm resultados.vcd

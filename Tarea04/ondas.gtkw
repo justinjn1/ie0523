@@ -1,0 +1,82 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Mon Oct 28 01:51:52 2024
+[*]
+[dumpfile] "/home/justinjn2/Desktop/IE-0523/Verilog/Tarea04/ondas.vcd"
+[dumpfile_mtime] "Mon Oct 28 01:48:58 2024"
+[dumpfile_size] 1925
+[savefile] "/home/justinjn2/Desktop/IE-0523/Verilog/Tarea04/ondas.gtkw"
+[timestart] 0
+[size] 1920 1011
+[pos] 21139 3476
+*-1.439498 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[markername] AA
+[markername] BB
+[markername] CC
+[markername] DD
+[markername] EE
+[markername] FF
+[markername] GG
+[markername] HH
+[markername] II
+[markername] JJ
+[markername] KK
+[markername] LL
+[markername] MM
+[markername] NN
+[markername] OO
+[markername] PP
+[markername] QQ
+[markername] RR
+[markername] SS
+[markername] TT
+[markername] UU
+[markername] VV
+[markername] WW
+[markername] XX
+[markername] YY
+[markername] ZZ
+[sst_width] 40
+[signals_width] 166
+[sst_expanded] 0
+[sst_vpaned_height] 149
+@28
+testbench.UUT1.rst
+testbench.UUT1.clk
+(1)testbench.UUT1.cnt_clk[1:0]
+@29
+(0)testbench.UUT1.cnt_clk[1:0]
+@800028
+testbench.UUT1.cnt_clk[1:0]
+@1001200
+-group_end
+@420
+testbench.UUT1.ADDRES
+@22
+testbench.UUT1.I2C_ADDR[6:0]
+@420
+testbench.UUT1.IDLE
+@22
+testbench.UUT1.RD_DATA[15:0]
+@420
+testbench.UUT1.READ
+@28
+testbench.UUT1.RNW
+testbench.UUT1.SCL
+testbench.UUT1.SDA_IN
+testbench.UUT1.SDA_OE
+testbench.UUT1.SDA_OUT
+testbench.UUT1.STARD_STB
+@420
+testbench.UUT1.STOP
+testbench.UUT1.WAIT
+testbench.UUT1.WRITE
+@22
+testbench.UUT1.WR_DATA[15:0]
+testbench.UUT1.next_State[5:0]
+@28
+testbench.UUT1.next_cnt_clk[1:0]
+@22
+testbench.UUT1.state[5:0]
+[pattern_trace] 1
+[pattern_trace] 0

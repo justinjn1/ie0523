@@ -1,0 +1,37 @@
+all: prueba1 prueba2 prueba3 prueba4
+
+# Conductual.
+prueba1:
+	yosys -s gatemanager.ys
+	iverilog testbench_cond.v -o salida.exe
+	./salida.exe
+	gtkwave ondas.gtkw
+	rm salida.exe &
+	rm ondas.vcd
+
+# RTLIL.
+prueba2:
+	yosys -s gatemanager.ys
+	iverilog testbench_RTLIL.v -o salida.exe
+	./salida.exe
+	gtkwave ondas.gtkw
+	rm salida.exe &
+	rm ondas.vcd
+
+# Síntesis completa.
+prueba3:
+	yosys -s gatemanager.ys
+	iverilog testbench_synth.v -o salida.exe
+	./salida.exe
+	gtkwave ondas.gtkw
+	rm salida.exe &
+	rm ondas.vcd
+
+# Síntesis completa con retardo.
+prueba4:
+	yosys -s gatemanager.ys
+	iverilog testbench_synth_delay.v -o salida.exe
+	./salida.exe
+	gtkwave ondas.gtkw
+	rm salida.exe &
+	rm ondas.vcd

@@ -1,0 +1,42 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Sat Nov  9 12:12:10 2024
+[*]
+[dumpfile] "/home/justinjn2/Desktop/IE-0523/Verilog/mdio/ondas.vcd"
+[dumpfile_mtime] "Sat Nov  9 12:12:05 2024"
+[dumpfile_size] 22797
+[savefile] "/home/justinjn2/Desktop/IE-0523/Verilog/mdio/ondas.gtkw"
+[timestart] 0
+[size] 1366 699
+[pos] 36479 5744
+*-8.937852 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 40
+[signals_width] 214
+[sst_expanded] 0
+[sst_vpaned_height] 199
+@28
+testbench.rst
+testbench.clk
+testbench.UUT1.start_stb
+testbench.UUT1.state[2:0]
+testbench.mdc
+testbench.UUT1.mdc_d
+testbench.UUT1.posedge_MDC
+testbench.mdio_in
+testbench.UUT1.OP[1:0]
+@22
+testbench.UUT1.cnt_bits[4:0]
+testbench.UUT1.transaccion_mdio[31:0]
+@28
+testbench.mdio_oe
+testbench.mdio_out
+@22
+testbench.UUT1.RD_DATA[15:0]
+@28
+testbench.UUT1.fin_transaccion
+testbench.UUT1.fin_transaccion_d
+@29
+testbench.UUT1.mdio_oe
+[pattern_trace] 1
+[pattern_trace] 0

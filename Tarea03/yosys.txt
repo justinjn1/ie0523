@@ -1,0 +1,616 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.33 (git sha1 2584903a060)
+
+
+-- Executing script file `atm.ys' --
+
+1. Executing Verilog-2005 frontend: atm.v
+Parsing Verilog input from `atm.v' to AST representation.
+Generating RTLIL representation for module `\atm'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \atm
+
+2.2. Analyzing design hierarchy..
+Top module:  \atm
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 12 switch rules as full_case in process $proc$atm.v:54$3 in module atm.
+Marked 1 switch rules as full_case in process $proc$atm.v:37$1 in module atm.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 4 redundant assignments.
+Promoted 11 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~13 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\atm.$proc$atm.v:54$3'.
+     1/37: $2\fondosInsuficientes[0:0]
+     2/37: $2\entregarDinero[0:0]
+     3/37: $3\balanceActualizado[0:0]
+     4/37: $4\balance[63:0]
+     5/37: $6\nextPin[15:0]
+     6/37: $2\balanceActualizado[0:0]
+     7/37: $3\balance[63:0]
+     8/37: $5\nextPin[15:0]
+     9/37: $7\nextState[5:0]
+    10/37: $4\advertencia[0:0]
+    11/37: $6\nextState[5:0]
+    12/37: $5\nextState[5:0]
+    13/37: $4\nextPin[15:0]
+    14/37: $3\nextCntPinIncorr[2:0]
+    15/37: $3\advertencia[0:0]
+    16/37: $3\pinIncorrecto[0:0]
+    17/37: $3\nextPin[15:0]
+    18/37: $2\nextCntPinIncorr[2:0]
+    19/37: $4\nextState[5:0]
+    20/37: $2\advertencia[0:0]
+    21/37: $2\pinIncorrecto[0:0]
+    22/37: $3\nextDigito[2:0]
+    23/37: $2\nextDigito[2:0]
+    24/37: $3\nextState[5:0]
+    25/37: $2\nextPin[15:0]
+    26/37: $2\nextState[5:0]
+    27/37: $1\nextState[5:0]
+    28/37: $1\nextPin[15:0]
+    29/37: $2\balance[63:0]
+    30/37: $1\nextCntPinIncorr[2:0]
+    31/37: $1\nextDigito[2:0]
+    32/37: $1\alarmaBloqueo[0:0]
+    33/37: $1\advertencia[0:0]
+    34/37: $1\pinIncorrecto[0:0]
+    35/37: $1\fondosInsuficientes[0:0]
+    36/37: $1\entregarDinero[0:0]
+    37/37: $1\balanceActualizado[0:0]
+Creating decoders for process `\atm.$proc$atm.v:37$1'.
+     1/5: $0\pinIngresado[15:0]
+     2/5: $0\cntPinIncorr[2:0]
+     3/5: $0\cntDigito[2:0]
+     4/5: $0\state[5:0]
+     5/5: $0\balance[63:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\atm.\balanceActualizado' from process `\atm.$proc$atm.v:54$3'.
+No latch inferred for signal `\atm.\entregarDinero' from process `\atm.$proc$atm.v:54$3'.
+No latch inferred for signal `\atm.\fondosInsuficientes' from process `\atm.$proc$atm.v:54$3'.
+No latch inferred for signal `\atm.\pinIncorrecto' from process `\atm.$proc$atm.v:54$3'.
+No latch inferred for signal `\atm.\advertencia' from process `\atm.$proc$atm.v:54$3'.
+No latch inferred for signal `\atm.\alarmaBloqueo' from process `\atm.$proc$atm.v:54$3'.
+No latch inferred for signal `\atm.\nextState' from process `\atm.$proc$atm.v:54$3'.
+No latch inferred for signal `\atm.\nextDigito' from process `\atm.$proc$atm.v:54$3'.
+No latch inferred for signal `\atm.\nextCntPinIncorr' from process `\atm.$proc$atm.v:54$3'.
+No latch inferred for signal `\atm.\nextPin' from process `\atm.$proc$atm.v:54$3'.
+Latch inferred for signal `\atm.\balance' from process `\atm.$proc$atm.v:54$3': $auto$proc_dlatch.cc:427:proc_dlatch$394
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\atm.\state' using process `\atm.$proc$atm.v:37$1'.
+  created $dff cell `$procdff$395' with positive edge clock.
+Creating register for signal `\atm.\cntDigito' using process `\atm.$proc$atm.v:37$1'.
+  created $dff cell `$procdff$396' with positive edge clock.
+Creating register for signal `\atm.\cntPinIncorr' using process `\atm.$proc$atm.v:37$1'.
+  created $dff cell `$procdff$397' with positive edge clock.
+Creating register for signal `\atm.\balance' using process `\atm.$proc$atm.v:37$1'.
+  created $dff cell `$procdff$398' with positive edge clock.
+Creating register for signal `\atm.\pinIngresado' using process `\atm.$proc$atm.v:37$1'.
+  created $dff cell `$procdff$399' with positive edge clock.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 12 empty switches in `\atm.$proc$atm.v:54$3'.
+Removing empty process `atm.$proc$atm.v:54$3'.
+Found and cleaned up 1 empty switch in `\atm.$proc$atm.v:37$1'.
+Removing empty process `atm.$proc$atm.v:37$1'.
+Cleaned up 13 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module atm.
+<suppressed ~28 debug messages>
+
+4. Executing FSM pass (extract and optimize FSM).
+
+4.1. Executing FSM_DETECT pass (finding FSMs in design).
+Found FSM state register atm.balance.
+Found FSM state register atm.state.
+
+4.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+Extracting FSM `\balance' from module `\atm'.
+  found $dff cell for state register: $procdff$398
+  root of input selection tree: $procmux$340_Y
+  found reset state: 64'0000000000000000000000000000000000000000000000000000000000000000 (guessed from mux tree)
+  found ctrl input: \rst
+  found state code: 64'0000000000000000000000000000000000000000000000000000000000000000
+  fsm extraction failed: at least two states are required.
+Extracting FSM `\state' from module `\atm'.
+  found $dff cell for state register: $procdff$395
+  root of input selection tree: $procmux$337_Y
+  found reset state: 6'000001 (guessed from mux tree)
+  found ctrl input: \rst
+  found state code: 6'000001
+  found ctrl input: $procmux$271_CMP
+  found ctrl input: $procmux$272_CMP
+  found ctrl input: $procmux$273_CMP
+  found ctrl input: $procmux$274_CMP
+  found ctrl input: $procmux$275_CMP
+  found ctrl input: $procmux$276_CMP
+  found ctrl input: $procmux$200_CMP
+  found ctrl input: $eq$atm.v:85$7_Y
+  found state code: 6'000010
+  found ctrl input: $procmux$125_CMP
+  found ctrl input: $eq$atm.v:87$8_Y
+  found ctrl input: $procmux$83_CMP
+  found ctrl input: $eq$atm.v:95$11_Y
+  found state code: 6'001000
+  found ctrl input: $procmux$113_CMP
+  found ctrl input: \tipoTrans
+  found state code: 6'010000
+  found state code: 6'100000
+  found ctrl input: $procmux$247_CMP
+  found ctrl input: \digitoSTB
+  found state code: 6'000100
+  found ctrl input: $procmux$268_CMP
+  found ctrl input: \tarjetaRecibida
+  found ctrl output: $procmux$23_CMP
+  found ctrl output: $procmux$29_CMP
+  found ctrl output: $procmux$35_CMP
+  found ctrl output: $procmux$41_CMP
+  found ctrl output: $procmux$47_CMP
+  found ctrl output: $procmux$54_CMP
+  found ctrl output: $procmux$61_CMP
+  found ctrl output: $procmux$68_CMP
+  found ctrl output: $procmux$83_CMP
+  found ctrl output: $procmux$98_CMP
+  found ctrl output: $procmux$113_CMP
+  found ctrl output: $procmux$125_CMP
+  found ctrl output: $procmux$137_CMP
+  found ctrl output: $procmux$149_CMP
+  found ctrl output: $procmux$161_CMP
+  found ctrl output: $procmux$173_CMP
+  found ctrl output: $procmux$182_CMP
+  found ctrl output: $procmux$191_CMP
+  found ctrl output: $procmux$200_CMP
+  found ctrl output: $procmux$209_CMP
+  found ctrl output: $procmux$218_CMP
+  found ctrl output: $procmux$227_CMP
+  found ctrl output: $procmux$237_CMP
+  found ctrl output: $procmux$247_CMP
+  found ctrl output: $procmux$257_CMP
+  found ctrl output: $procmux$268_CMP
+  found ctrl output: $procmux$271_CMP
+  found ctrl output: $procmux$272_CMP
+  found ctrl output: $procmux$273_CMP
+  found ctrl output: $procmux$274_CMP
+  found ctrl output: $procmux$275_CMP
+  found ctrl output: $procmux$276_CMP
+  found ctrl output: $procmux$279_CMP
+  found ctrl output: $procmux$280_CMP
+  found ctrl output: $procmux$281_CMP
+  found ctrl output: $procmux$282_CMP
+  found ctrl output: $procmux$285_CMP
+  found ctrl output: $procmux$286_CMP
+  found ctrl output: $procmux$292_CMP
+  found ctrl output: $procmux$298_CMP
+  found ctrl output: $procmux$299_CMP
+  found ctrl output: $procmux$304_CMP
+  found ctrl output: $procmux$310_CMP
+  found ctrl output: $procmux$316_CMP
+  found ctrl output: $procmux$319_CMP
+  found ctrl output: $procmux$322_CMP
+  found ctrl output: $procmux$325_CMP
+  found ctrl output: $procmux$326_CMP
+  ctrl inputs: { $eq$atm.v:95$11_Y $eq$atm.v:87$8_Y $eq$atm.v:85$7_Y \tipoTrans \digitoSTB \tarjetaRecibida \rst }
+  ctrl outputs: { $procmux$337_Y $procmux$326_CMP $procmux$325_CMP $procmux$322_CMP $procmux$319_CMP $procmux$316_CMP $procmux$310_CMP $procmux$304_CMP $procmux$299_CMP $procmux$298_CMP $procmux$292_CMP $procmux$286_CMP $procmux$285_CMP $procmux$282_CMP $procmux$281_CMP $procmux$280_CMP $procmux$279_CMP $procmux$276_CMP $procmux$275_CMP $procmux$274_CMP $procmux$273_CMP $procmux$272_CMP $procmux$271_CMP $procmux$268_CMP $procmux$257_CMP $procmux$247_CMP $procmux$237_CMP $procmux$227_CMP $procmux$218_CMP $procmux$209_CMP $procmux$200_CMP $procmux$191_CMP $procmux$182_CMP $procmux$173_CMP $procmux$161_CMP $procmux$149_CMP $procmux$137_CMP $procmux$125_CMP $procmux$113_CMP $procmux$98_CMP $procmux$83_CMP $procmux$68_CMP $procmux$61_CMP $procmux$54_CMP $procmux$47_CMP $procmux$41_CMP $procmux$35_CMP $procmux$29_CMP $procmux$23_CMP }
+  transition:   6'100000 7'------0 ->   6'000001 54'000001011100000001000100000100000000000000000000011111
+  transition:   6'100000 7'------1 ->   6'100000 54'100000011100000001000100000100000000000000000000011111
+  transition:   6'010000 7'------0 ->   6'000001 54'000001100000000010001000001000000000000000000011100000
+  transition:   6'010000 7'------1 ->   6'010000 54'010000100000000010001000001000000000000000000011100000
+  transition:   6'001000 7'------0 ->   6'000001 54'000001000000100000000000010000000000000000000000000000
+  transition:   6'001000 7'------1 ->   6'001000 54'001000000000100000000000010000000000000000000000000000
+  transition:   6'000100 7'------0 ->   6'000001 54'000001000011001100010000100000001111111111111100000000
+  transition:   6'000100 7'--0---1 ->   6'000010 54'000010000011001100010000100000001111111111111100000000
+  transition:   6'000100 7'001---1 ->   6'000100 54'000100000011001100010000100000001111111111111100000000
+  transition:   6'000100 7'101---1 ->   6'001000 54'001000000011001100010000100000001111111111111100000000
+  transition:   6'000100 7'-110--1 ->   6'010000 54'010000000011001100010000100000001111111111111100000000
+  transition:   6'000100 7'-111--1 ->   6'100000 54'100000000011001100010000100000001111111111111100000000
+  transition:   6'000010 7'------0 ->   6'000001 54'000001000000010000100001000001110000000000000000000000
+  transition:   6'000010 7'----0-1 ->   6'000010 54'000010000000010000100001000001110000000000000000000000
+  transition:   6'000010 7'----1-1 ->   6'000100 54'000100000000010000100001000001110000000000000000000000
+  transition:   6'000001 7'------0 ->   6'000001 54'000001000000000000000010000010000000000000000000000000
+  transition:   6'000001 7'-----01 ->   6'000001 54'000001000000000000000010000010000000000000000000000000
+  transition:   6'000001 7'-----11 ->   6'000010 54'000010000000000000000010000010000000000000000000000000
+
+4.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\state$400' from module `\atm'.
+
+4.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \atm..
+Removed 88 unused cells and 212 unused wires.
+<suppressed ~91 debug messages>
+
+4.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\state$400' from module `\atm'.
+  Removing unused output signal $procmux$41_CMP.
+  Removing unused output signal $procmux$61_CMP.
+  Removing unused output signal $procmux$83_CMP.
+  Removing unused output signal $procmux$113_CMP.
+  Removing unused output signal $procmux$125_CMP.
+  Removing unused output signal $procmux$200_CMP.
+  Removing unused output signal $procmux$247_CMP.
+  Removing unused output signal $procmux$268_CMP.
+  Removing unused output signal $procmux$271_CMP.
+  Removing unused output signal $procmux$272_CMP.
+  Removing unused output signal $procmux$273_CMP.
+  Removing unused output signal $procmux$274_CMP.
+  Removing unused output signal $procmux$275_CMP.
+  Removing unused output signal $procmux$276_CMP.
+  Removing unused output signal $procmux$285_CMP.
+  Removing unused output signal $procmux$286_CMP.
+  Removing unused output signal $0\state[5:0] [0].
+  Removing unused output signal $0\state[5:0] [1].
+  Removing unused output signal $0\state[5:0] [2].
+  Removing unused output signal $0\state[5:0] [3].
+  Removing unused output signal $0\state[5:0] [4].
+  Removing unused output signal $0\state[5:0] [5].
+
+4.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+Recoding FSM `$fsm$\state$400' from module `\atm' using `auto' encoding:
+  mapping auto encoding to `one-hot` for this FSM.
+  100000 -> ----1-
+  010000 -> ---1--
+  001000 -> --1---
+  000100 -> -1----
+  000010 -> 1-----
+  000001 -> -----1
+
+4.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+FSM `$fsm$\state$400' from module `atm':
+-------------------------------------
+
+  Information on FSM $fsm$\state$400 (\state):
+
+  Number of input signals:    7
+  Number of output signals:  32
+  Number of state bits:       6
+
+  Input signals:
+    0: \rst
+    1: \tarjetaRecibida
+    2: \digitoSTB
+    3: \tipoTrans
+    4: $eq$atm.v:85$7_Y
+    5: $eq$atm.v:87$8_Y
+    6: $eq$atm.v:95$11_Y
+
+  Output signals:
+    0: $procmux$23_CMP
+    1: $procmux$29_CMP
+    2: $procmux$35_CMP
+    3: $procmux$47_CMP
+    4: $procmux$54_CMP
+    5: $procmux$68_CMP
+    6: $procmux$98_CMP
+    7: $procmux$137_CMP
+    8: $procmux$149_CMP
+    9: $procmux$161_CMP
+   10: $procmux$173_CMP
+   11: $procmux$182_CMP
+   12: $procmux$191_CMP
+   13: $procmux$209_CMP
+   14: $procmux$218_CMP
+   15: $procmux$227_CMP
+   16: $procmux$237_CMP
+   17: $procmux$257_CMP
+   18: $procmux$279_CMP
+   19: $procmux$280_CMP
+   20: $procmux$281_CMP
+   21: $procmux$282_CMP
+   22: $procmux$292_CMP
+   23: $procmux$298_CMP
+   24: $procmux$299_CMP
+   25: $procmux$304_CMP
+   26: $procmux$310_CMP
+   27: $procmux$316_CMP
+   28: $procmux$319_CMP
+   29: $procmux$322_CMP
+   30: $procmux$325_CMP
+   31: $procmux$326_CMP
+
+  State encoding:
+    0:   6'----1-
+    1:   6'---1--
+    2:   6'--1---
+    3:   6'-1----
+    4:   6'1-----
+    5:   6'-----1  <RESET STATE>
+
+  Transition Table (state_in, ctrl_in, state_out, ctrl_out):
+      0:     0 7'------1   ->     0 1879310351
+      1:     0 7'------0   ->     5 1879310351
+      2:     1 7'------1   ->     1 32'10000000000010000000000000110000
+      3:     1 7'------0   ->     5 32'10000000000010000000000000110000
+      4:     2 7'------1   ->     2 33554432
+      5:     2 7'------0   ->     5 33554432
+      6:     3 7'-111--1   ->     0 215023552
+      7:     3 7'-110--1   ->     1 215023552
+      8:     3 7'101---1   ->     2 215023552
+      9:     3 7'001---1   ->     3 215023552
+     10:     3 7'--0---1   ->     4 215023552
+     11:     3 7'------0   ->     5 215023552
+     12:     4 7'----1-1   ->     3 19070976
+     13:     4 7'----0-1   ->     4 19070976
+     14:     4 7'------0   ->     5 19070976
+     15:     5 7'-----11   ->     4 0
+     16:     5 7'------0   ->     5 0
+     17:     5 7'-----01   ->     5 0
+
+-------------------------------------
+
+4.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+Mapping FSM `$fsm$\state$400' from module `\atm'.
+
+5. Executing MEMORY pass.
+
+5.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+5.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+5.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+5.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+5.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+5.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \atm..
+Removed 0 unused cells and 51 unused wires.
+<suppressed ~1 debug messages>
+
+5.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+5.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+5.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \atm..
+
+5.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.11. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+6. Executing TECHMAP pass (map to technology primitives).
+
+6.1. Executing Verilog-2005 frontend: /usr/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/usr/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+6.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $eq.
+Running "alumacc" on wrapper $extern:wrap:$add:A_SIGNED=0:A_WIDTH=16:B_SIGNED=0:B_WIDTH=4:Y_WIDTH=16:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:A_SIGNED=0:A_WIDTH=16:B_SIGNED=0:B_WIDTH=4:Y_WIDTH=16:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:A_SIGNED=0:A_WIDTH=16:B_SIGNED=0:B_WIDTH=4:Y_WIDTH=16:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$add:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=32:Y_WIDTH=32:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=32:Y_WIDTH=32:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=32:Y_WIDTH=32:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$lt:A_SIGNED=0:A_WIDTH=32:B_SIGNED=0:B_WIDTH=64:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$lt:A_SIGNED=0:A_WIDTH=32:B_SIGNED=0:B_WIDTH=64:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$lt:A_SIGNED=0:A_WIDTH=32:B_SIGNED=0:B_WIDTH=64:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $reduce_or.
+Using template $paramod$d6eefa73b09c260984bb3ab238c3c05801fa9e82\_90_pmux for cells of type $pmux.
+Using template $paramod$32e7c4d6f92ff4337599ece53082d2e88a82a9f2\_90_pmux for cells of type $pmux.
+Using template $paramod$c5c783b17ab1d780abfad8cfe6563a0a7b47a3b0\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $dff.
+Using template $paramod$076c9a7a3f037230073fe14dd4865d470cb48917\_90_alu for cells of type $alu.
+Using template $paramod$9a7f8f842c7d15a8f6b6820db3daba71c00239a1\_90_alu for cells of type $alu.
+Using template $paramod$2126a3039e9678f6a4bd73d35a1f58ee2616afb2\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000100000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000010000 for cells of type $lcu.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000001000000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $or.
+No more expansions possible.
+<suppressed ~1458 debug messages>
+
+7. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell DFF (noninv, pins=3, area=18.00) is a direct match for cell type $_DFF_P_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \DFF _DFF_P_ (.C( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    unmapped dff cell: $_DFF_PN0_
+    unmapped dff cell: $_DFF_PN1_
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFSR_NNN_
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+7.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\atm':
+  mapped 28 $_DFF_P_ cells to \DFF cells.
+
+8. Executing ABC pass (technology mapping using ABC).
+
+8.1. Extracting gate netlist of module `\atm' to `<abc-temp-dir>/input.blif'..
+Extracted 1907 gates and 2059 wires to a netlist network with 149 inputs and 34 outputs.
+
+8.1.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lib -w /home/justinjn2/Desktop/IE-0523/Verilog/Tarea03/./cmos_cells.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
+ABC: Warning: Templates are not defined.
+ABC: Libery parser cannot read "time_unit".  Assuming   time_unit : "1ns".
+ABC: Libery parser cannot read "capacitive_load_unit". Assuming   capacitive_load_unit(1, pf).
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFF".
+ABC: Library "demo" from "/home/justinjn2/Desktop/IE-0523/Verilog/Tarea03/./cmos_cells.lib" has 4 cells (1 skipped: 1 seq; 0 tri-state; 0 no func; 0 dont_use).  Time =     0.00 sec
+ABC: Memory =    0.01 MB. Time =     0.00 sec
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+8.1.2. Re-integrating ABC results.
+ABC RESULTS:               NOT cells:      140
+ABC RESULTS:              NAND cells:      280
+ABC RESULTS:               NOR cells:      209
+ABC RESULTS:               BUF cells:        1
+ABC RESULTS:        internal signals:     1876
+ABC RESULTS:           input signals:      149
+ABC RESULTS:          output signals:       34
+Removing temp directory.
+
+9. Executing OPT pass (performing simple optimizations).
+
+9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module atm.
+
+9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\atm'.
+Removed a total of 0 cells.
+
+9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \atm..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \atm.
+Performed a total of 0 changes.
+
+9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\atm'.
+Removed a total of 0 cells.
+
+9.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \atm..
+Removed 0 unused cells and 1059 unused wires.
+<suppressed ~4 debug messages>
+
+9.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module atm.
+
+9.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+9.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \atm..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+9.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \atm.
+Performed a total of 0 changes.
+
+9.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\atm'.
+Removed a total of 0 cells.
+
+9.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+9.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \atm..
+
+9.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module atm.
+
+9.16. Finished OPT passes. (There is nothing left to do.)
+
+10. Executing Verilog backend.
+
+10.1. Executing BMUXMAP pass.
+
+10.2. Executing DEMUXMAP pass.
+Dumping module `\atm'.
+
+End of script. Logfile hash: 430624b6cf, CPU: user 0.63s system 0.01s, MEM: 21.95 MB peak
+Yosys 0.33 (git sha1 2584903a060)
+Time spent: 30% 1x abc (0 sec), 29% 1x techmap (0 sec), ...

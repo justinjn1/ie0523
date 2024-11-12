@@ -1,0 +1,20 @@
+read_verilog gatemanager.v
+hierarchy -check -top gatemanager
+proc
+opt
+
+fsm
+opt
+
+memory
+opt
+
+techmap
+opt
+write_verilog gatemanager_techmap.v
+
+dfflibmap -liberty ./cmos_cells.lib
+write_verilog gatemanager_dfflimap.v
+
+abc -liberty ./cmos_cells.lib
+write_verilog gatemanager_dfflipmap.v

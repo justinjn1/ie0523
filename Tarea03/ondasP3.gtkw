@@ -1,0 +1,51 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Wed Oct  9 21:25:20 2024
+[*]
+[dumpfile] "/home/justinjn2/Desktop/IE-0523/Verilog/Tarea03/B94037/ondas.vcd"
+[dumpfile_mtime] "Wed Oct  9 21:22:58 2024"
+[dumpfile_size] 4667
+[savefile] "/home/justinjn2/Desktop/IE-0523/Verilog/Tarea03/B94037/ondasP3.gtkw"
+[timestart] 0
+[size] 1920 1001
+[pos] 52 32
+*-3.282342 0 4 24 44 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[markername] Apin1
+[markername] Bpin2
+[markername] Cpin3
+[treeopen] testbench.
+[sst_width] 40
+[signals_width] 222
+[sst_expanded] 0
+[sst_vpaned_height] 297
+@28
+testbench.UUT1.clk
+testbench.UUT1.rst
+testbench.UUT1.tarjetaRecibida
+@24
+[color] 7
+testbench.UUT1.pinTarjeta[15:0]
+testbench.UUT1.state[5:0]
+@28
+testbench.UUT1.digitoSTB
+[color] 7
+testbench.UUT1.digito[3:0]
+@24
+testbench.UUT1.cntDigito[2:0]
+[color] 7
+testbench.UUT1.pinIngresado[15:0]
+testbench.UUT1.nextPin[15:0]
+@28
+[color] 7
+testbench.UUT1.pinIncorrecto
+[color] 7
+testbench.UUT1.advertencia
+[color] 7
+testbench.UUT1.alarmaBloqueo
+@22
+testbench.UUT1.nextState[5:0]
+@28
+testbench.UUT1.nextDigito[2:0]
+testbench.UUT1.cntPinIncorr[2:0]
+[pattern_trace] 1
+[pattern_trace] 0

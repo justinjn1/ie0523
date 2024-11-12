@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Tue Oct  1 14:21:58 2024
+[*]
+[dumpfile] "/home/justinjn2/Desktop/IE-0523/Verilog/maquinasEstados/ondas.vcd"
+[dumpfile_mtime] "Tue Oct  1 14:20:38 2024"
+[dumpfile_size] 1273
+[savefile] "/home/justinjn2/Desktop/IE-0523/Verilog/maquinasEstados/ondas.gtkw"
+[timestart] 0
+[size] 1366 721
+[pos] -51 -51
+*-5.933215 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] me_tb.
+[sst_width] 278
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 200
+@28
+me_tb.ME.clk
+me_tb.ME.rst
+me_tb.ME.s_in
+@22
+me_tb.ME.sec_recibida[4:0]
+@28
+me_tb.ME.valido
+@29
+me_tb.ME.estado_actual[1:0]
+[pattern_trace] 1
+[pattern_trace] 0
